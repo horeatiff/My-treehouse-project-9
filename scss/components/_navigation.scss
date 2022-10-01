@@ -1,0 +1,57 @@
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.nav-fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+#myLinks a {
+  text-align: center;
+}
+
+.topnav a {
+  color: rgba(183, 14, 195, 1);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.1);
+  letter-spacing: 3px;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: rgba(183, 14, 195, 0.8);
+  color: black;
+}
+
+.active {
+  color: white;
+}

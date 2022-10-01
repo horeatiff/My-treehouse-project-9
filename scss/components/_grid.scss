@@ -1,0 +1,12 @@
+.intro-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+
