@@ -314,54 +314,31 @@ template {
   box-sizing: border-box;
 }
 
-.titles h2 {
-  font-size: 30px;
-  letter-spacing: 5px;
-  padding: 0;
-  text-align: center;
-  text-shadow: 0px 0px 20px rgb(183, 14, 195);
-  color: white;
-  margin-top: 30px;
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
-.titles h3 {
-  font-size: 15px;
-  letter-spacing: 5px;
-  padding: 0;
-  text-align: center;
-  text-shadow: 0px 0px 20px rgb(183, 14, 195);
-  color: white;
-  margin-top: 30px;
+@keyframes bodyFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-.titles {
-  display: flex;
-  flex-direction: column;
+@keyframes menuFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-.description {
-  max-width: 640px;
-  border-radius: 15px;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.description span {
-  display: block;
-  color: white;
-  margin-top: 10px;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 3px;
-  text-shadow: 0px 0px 20px rgb(183, 14, 195);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
-  text-align: center;
-}
-
 /* =============================================================================
    HTML5 CSS Reset Minified - Eric Meyer
    ========================================================================== */
@@ -535,7 +512,8 @@ body {
   width: 100%;
   height: 100%;
   background: #111;
-  animation: fadeIn 1s;
+  animation: bodyFadeIn 1s;
+  animation-timing-function: ease-in-out;
   background-position: 50% 50%;
   background-image: url("/img/img.jpg");
   background-repeat: no-repeat;
@@ -545,80 +523,126 @@ body {
 
 html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
-body {
-  font: normal 75% Arial, Helvetica, sans-serif;
-}
-
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
-
-/* ---- stats.js ---- */
-.count-particles {
-  background: #000022;
+.content {
   position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13e8e9;
-  font-size: 0.8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-
-.js-count-particles {
-  font-size: 1.1em;
-}
-
-#stats,
-.count-particles {
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
-#stats {
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-
-.count-particles {
-  border-radius: 0 0 3px 3px;
-}
-
-/* ---- particles.js container ---- */
-#particles-js {
+  left: 0px;
+  top: 0px;
+  z-index: 1;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.buttons {
-  position: relative;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .intro-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
-  position: absolute;
-  width: 100%;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
   left: 0;
   right: 0;
+  position: relative;
   pointer-events: none;
+  scroll-snap-align: start;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.titles h2 {
+  font-size: 30px;
+  letter-spacing: 5px;
+  padding: 0;
+  text-align: center;
+  text-shadow: 0px 0px 20px rgb(183, 14, 195);
+  color: white;
+  margin-top: 30px;
+}
+
+.titles h3 {
+  font-size: 15px;
+  letter-spacing: 5px;
+  padding: 0;
+  text-align: center;
+  text-shadow: 0px 0px 20px rgb(183, 14, 195);
+  color: white;
+  margin-top: 30px;
+}
+
+.descriptions {
+  max-width: 640px;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.descriptions span {
+  display: block;
+  color: white;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-shadow: 0px 0px 20px rgb(183, 14, 195);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+
+.first-page {
+  height: 100%;
+}
+
+.about-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+  justify-content: center;
+}
+
+.about-card {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.about-card h2 {
+  font-size: 15px;
+  letter-spacing: 5px;
+  padding: 0;
+  text-align: center;
+  text-shadow: 0px 0px 20px rgb(183, 14, 195);
+  color: white;
+  margin-top: 30px;
+}
+
+.about-card span {
+  display: block;
+  color: white;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-shadow: 0px 0px 20px rgb(183, 14, 195);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
 }
 
 .my-photo {
@@ -636,43 +660,30 @@ canvas {
   box-shadow: 0px 0px 20px rgb(183, 14, 195);
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.mobile-container {
-  max-width: 480px;
-  margin: auto;
-  background-color: #555;
-  height: 500px;
-  color: white;
-  border-radius: 10px;
-}
-
 .nav-fixed {
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
+  pointer-events: auto;
 }
 
 .topnav {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.8);
-  position: relative;
+  position: sticky;
 }
 
-.topnav #myLinks {
+.topnav #button-links {
   display: none;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
+  animation: menuFadeIn 1s;
 }
 
-#myLinks a {
+#button-links a {
   text-align: center;
+  width: 100%;
+  font-weight: 700;
 }
 
 .topnav a {
@@ -686,20 +697,44 @@ canvas {
 }
 
 .topnav a.icon {
-  background: black;
   display: block;
   position: absolute;
   right: 0;
   top: 0;
+  font-weight: 700;
 }
 
 .topnav a:hover {
   background-color: rgba(183, 14, 195, 0.8);
   color: black;
+  animation: menuFadeIn 0.8s;
 }
 
-.active {
+.button {
+  position: relative;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-home {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+}
+
+.buttons-wrap {
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

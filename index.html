@@ -10,35 +10,34 @@
       href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <body>
-    <div id="particles-js">
-      <div class="nav-fixed">
-        <div class="topnav">
-          <a href="#home" class="active">HOME</a>
-          <div id="myLinks">
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-          </div>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>
-      </div>
+  <div id="particles-js"></div>
 
+  <body>
+    <main class="content">
+      <nav class="nav-fixed">
+        <div class="topnav">
+          <div class="button-wrap">
+            <div class="button-home"><a href="#home">HOME</a></div>
+            <div id="button-links">
+              <div class="button"><a href="#news">News</a></div>
+              <div class="button"><a href="#contact">Contact</a></div>
+              <div class="button"><a href="#about">About</a></div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="buttonLinks()">
+              <div class="buttons">MENU</div>
+            </a>
+          </div>
+        </div>
+      </nav>   
       <div class="intro-wrap">
         <img class="my-photo" src="img/me.jpg" alt="My profile photo" />
         <div class="titles">
-          <h2>HOREA TIFF</h3>
+          <h2>HOREA TIFF</h2>
           <h3>&lt;WEB DEVELOPER/></h3>
-          <div class="description">
+          <div class="descriptions">
             <span>
               I'm a software engineer specializing in designing great digital
               experiences.
@@ -50,7 +49,31 @@
           </div>
         </div>
       </div>
-    </div>
+
+      <div class="about-wrap">
+        <div class="about-card">
+          <h2>ABOUT ME</h2>
+          <span
+            >I'm Horea, a web developer based in Cluj-Napoca, Romania. I started
+            out as a tech enthusiast in my early years and that led me to
+            getting an Electrical Engineer degree. I have always liked computers
+            and electronics, in my early years i used to build computers and fix
+            laptops/phones/tablets for friends and family...i feel that this
+            passion for technology made me consider following a career in web
+            development.
+          </span>
+          <span
+            >As in all things tech related, i believe a careful approach can
+            lead to a good design that has a ight balance between form and
+            function. My goal is to create excelent user friendly design that
+            help clients achieve their goals. If you are looking for a web
+            developer who can take your ideas to the next level, don't hesitate
+            to contact me. I would love to wok on your projects!
+          </span>
+        </div>
+      </div>
+    </main>
+
     <script src="script/particles.js"></script>
     <script src="script/app.js"></script>
   </body>
