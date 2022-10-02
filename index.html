@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -16,22 +16,25 @@
   <div id="particles-js"></div>
 
   <body>
-    <main class="content">
-      <nav class="nav-fixed">
-        <div class="topnav">
-          <div class="button-wrap">
-            <div class="button-home"><a href="#home">HOME</a></div>
-            <div id="button-links">
-              <div class="button"><a href="#news">News</a></div>
-              <div class="button"><a href="#contact">Contact</a></div>
-              <div class="button"><a href="#about">About</a></div>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="buttonLinks()">
-              <div class="buttons">MENU</div>
-            </a>
-          </div>
+    <nav class="nav-fixed">
+      <section class="top-nav">
+        <div class="home-button">
+         HOME
         </div>
-      </nav>   
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+        <ul class="menu">
+          <li>One</li>
+          <li>Two</li>
+          <li>Three</li>
+          <li>Four</li>
+          <li>Five</li>
+        </ul>
+      </section>
+    </nav>
+    <main class="content">
       <div class="intro-wrap">
         <img class="my-photo" src="img/me.jpg" alt="My profile photo" />
         <div class="titles">
@@ -53,23 +56,34 @@
       <div class="about-wrap">
         <div class="about-card">
           <h2>ABOUT ME</h2>
-          <span
-            >I'm Horea, a web developer based in Cluj-Napoca, Romania. I started
+          <p>
+            I'm Horea, a web developer based in Cluj-Napoca, Romania. I started
             out as a tech enthusiast in my early years and that led me to
-            getting an Electrical Engineer degree. I have always liked computers
-            and electronics, in my early years i used to build computers and fix
-            laptops/phones/tablets for friends and family...i feel that this
-            passion for technology made me consider following a career in web
-            development.
-          </span>
-          <span
-            >As in all things tech related, i believe a careful approach can
-            lead to a good design that has a ight balance between form and
-            function. My goal is to create excelent user friendly design that
-            help clients achieve their goals. If you are looking for a web
-            developer who can take your ideas to the next level, don't hesitate
-            to contact me. I would love to wok on your projects!
-          </span>
+            getting involved into web development.
+          </p>
+          <p>
+            My goal is to create excelent user friendly designs that help
+            clients achieve their goals. If you are looking for a web developer
+            who can take your ideas to the next level, don't hesitate to contact
+            me. I would love to wok on your projects!
+          </p>
+        </div>
+      </div>
+
+      <div class="about-wrap">
+        <div class="about-card">
+          <h2>ABOUT ME</h2>
+          <p>
+            I'm Horea, a web developer based in Cluj-Napoca, Romania. I started
+            out as a tech enthusiast in my early years and that led me to
+            getting involved into web development.
+          </p>
+          <p>
+            My goal is to create excelent user friendly designs that help
+            clients achieve their goals. If you are looking for a web developer
+            who can take your ideas to the next level, don't hesitate to contact
+            me. I would love to wok on your projects!
+          </p>
         </div>
       </div>
     </main>

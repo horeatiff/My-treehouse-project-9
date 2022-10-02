@@ -1,12 +1,3 @@
-function buttonLinks() {
-  var x = document.getElementById("button-links");
-  if (x.style.display === "flex") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "flex";
-  }
-}
-
 particlesJS.load("particles-js", "/script/particles.json", function () {
   console.log("particles.js loaded - callback");
 });
