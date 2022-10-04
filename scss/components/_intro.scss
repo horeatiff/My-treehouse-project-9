@@ -5,24 +5,26 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  pointer-events: none;
   scroll-snap-align: center;
 }
 
 .titles {
   display: flex;
   flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding-bottom: 10px;
+  box-shadow: 0px 0px 15px rgb(90, 87, 87);
 }
 
-.titles h2 {
-  font-size: 30px;
-  letter-spacing: 5px;
-  padding: 0;
+h2 {
   text-align: center;
-  text-shadow: 0px 0px 20px rgb(183, 14, 195);
-  color: black;
   margin-top: 30px;
-  font-weight: bold;
+  margin-bottom: 30px;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 15px rgb(90, 87, 87);
 }
 
 .titles h3 {
@@ -31,15 +33,13 @@
   font-weight: 700;
   padding: 0;
   text-align: center;
-  text-shadow: 0px 0px 20px rgb(183, 14, 195);
   color: black;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .descriptions {
   max-width: 640px;
   border-radius: 15px;
-  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -48,19 +48,13 @@
   line-height: 20px;
   display: block;
   color: black;
-  margin-top: 10px;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 3px;
-  text-shadow: 0px 0px 20px rgb(183, 14, 195);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
+  letter-spacing: 1px;
+  padding: 10px;
   text-align: center;
 }
 
 .first-page {
   height: 100%;
 }
-
