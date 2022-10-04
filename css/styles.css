@@ -336,7 +336,7 @@ body {
   animation: bodyFadeIn 1s;
   animation-timing-function: ease-in-out;
   background-position: center;
-  background-image: url("/img/background.jpg");
+  background-image: url("img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
