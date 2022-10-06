@@ -1,125 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>HOREA TIFF /></title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOREA TIFF</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
 
   <body>
-    <nav class="nav-fixed">
-      <section class="top-nav">
-        <a href="#home"
-          ><img class="icon" src="img/home.svg" alt="home logo"
-        /></a>
-        <input id="menu-toggle" type="checkbox" />
-        <label class="menu-button-container" for="menu-toggle">
-          <div class="menu-button"></div>
-        </label>
-        <ul class="menu">
-          <li>ABOUT ME</li>
-          <li>PROJECTS</li>
-          <li>STATISTICS</li>
-          <li>CONTACT</li>
-        </ul>
-      </section>
+    <nav>
+      <h1><a href="#">HOREA TIFF</a></h1>
+      <ul class="top-nav">
+        <a href="#profile"> <li>HOME</li></a>
+        <a href="#portfolio"><li>PORTFOLIO</li></a>
+        <a href="#skills"><li>SKILLS</li></a>
+        <a href="#contact"><li>CONTACT</li></a>
+      </ul>
     </nav>
-    <main class="content">
-      <div class="intro-wrap">
-        <img class="my-photo" src="img/me.jpg" alt="My profile photo" />
-        <h2>HOREA TIFF</h2>
-        <div class="titles">
-          <h3>&lt;WEB DESIGNER/></h3>
-          <div class="descriptions">
-            <span>
-              I'm a web designer specializing in designing great digital
-              experiences.
-            </span>
-            <span>
-              I enjoy creating beautiful modern designs and intuitive user
-              interfaces.
-            </span>
-          </div>
-        </div>
-      </div>
 
-      <div class="card-wrap">
-        <h2>ABOUT ME</h2>
-        <div class="card-data">
-          <img class="about-photo" src="img/me2.jpg" alt="My profile photo" />
+    <div id="profile" class="desc-container">
+      <img class="desc-img" src="img/me.jpg" alt="Profile Image" />
+      <div class="desc-txt">
+        <p>Hi! I'm Horea, a front-end developer from Cluj-Napoca, Romania.</p>
+        <p>
+          I started out as a tech enthusiast in my early years and that led me
+          to getting involved into web development.
+        </p>
+        <p>
+          If you are looking for a web developer who can take your ideas to the
+          next level, don't hesitate to contact me. I would love to wok on your
+          projects!
+        </p>
+      </div>
+    </div>
+
+    <section>
+      <div class="title">
+        <h3 id="portfolio">PORTFOLIO</h3>
+      </div>
+      <div class="container">
+        <div class="col box-background">
+          <h3>About Me Page</h3>
+          <a href="https://horeatiff.github.io/My-treehouse-project-1/"
+            ><img
+              class="cont-img"
+              src="/img/portfolio-1.png"
+              alt="About Me Page"
+          /></a>
           <p>
-            I'm Horea, a web designer based in Cluj-Napoca, Romania. I started
-            out as a tech enthusiast in my early years and that led me to
-            getting involved into web development.
+            My first ever project, a colection of pages about me and the things
+            i like to do. I had a lot of fun building this project!
           </p>
           <p>
-            My goal is to create excelent user friendly designs that help
-            clients achieve their goals. If you are looking for a web developer
-            who can take your ideas to the next level, don't hesitate to contact
-            me. I would love to wok on your projects!
+            The structure was done in HTML and for the styling i used pure CSS.
           </p>
         </div>
-      </div>
-
-      <div class="card-wrap">
-        <h2>PROJECTS</h2>
-        <div class="card-data">
+        <div class="col box-background">
+          <h3>Mobile First Layout</h3>
+          <a href="https://horeatiff.github.io/My-treehouse-project-2/"
+            ><img
+              class="cont-img"
+              src="/img/portfolio-2.png"
+              alt="Mobile first page"
+          /></a>
+          <p>
+            A repsonsive layout website made with a mobile first approach. It is
+            optimized fot mobile devices, tablets and desktop computers.
+          </p>
+          <p>
+            The structure was done in HTML and for the styling i used pure CSS.
+          </p>
+        </div>
+        <div class="col box-background">
           <h3>Interactive Photo Gallery</h3>
           <a href="https://horeatiff.github.io/My-treehouse-project-5/"
             ><img
-              class="proj-photo"
-              src="img/project_1.jpg"
-              alt="interactive gallery"
+              class="cont-img"
+              src="/img/portfolio-3.png"
+              alt="Interactive Photo Gallery"
           /></a>
           <p>
             This is a photo gallery i made where the user can search a specific
             photo by its caption and there is also a lightbox for navigating
             between photos.
           </p>
-
           <p>
             JavaScript was used for making the lightbox and search function
             along with some CSS for styling.
           </p>
         </div>
-      </div>
-
-      <div class="card-wrap">
-        <h2>PROJECTS</h2>
-        <div class="card-data">
+        <div class="col box-background">
           <h3>Game Show App</h3>
           <a href="https://horeatiff.github.io/My-treehouse-project-6/"
             ><img
-              class="proj-photo"
-              src="img/project_2.jpg"
-              alt="interactive gallery"
+              class="cont-img"
+              src="/img/portfolio-4.png"
+              alt="Game Show App"
           /></a>
           <p>
             In this project i made a "WHEEL OF SUCESS" game where a player needs
             to guess the correct words in a phrase using the on-screen keyboard
             with a maximum of 5 wrong letters. If the player succeeds, a winner
             finish screen will congratulate him, else a lose screen will appear.
-
           </p>
           <p>
             A lot of CSS and JavaScript was involved in making this game come to
             life.
           </p>
         </div>
-      </div>
-
-      <div class="card-wrap">
-        <h2>PROJECTS</h2>
-        <div class="card-data">
+        <div class="col box-background">
           <h3>WebApp Dashboard</h3>
           <a href="https://horeatiff.github.io/My-treehouse-project-7/"
             ><img
-              class="proj-photo"
-              src="img/project_3.jpg"
-              alt="interactive gallery"
+              class="cont-img"
+              src="/img/portfolio-5.png"
+              alt="WebApp Dashboard"
           /></a>
           <p>
             This is an interactive dashboard for viewing traffic and also
@@ -132,17 +137,13 @@
             dashboard.
           </p>
         </div>
-      </div>
-
-      <div class="card-wrap">
-        <h2>PROJECTS</h2>
-        <div class="card-data">
-          <h3>Employee Directory with an API</h3>
-          <a href="https://horeatiff.github.io/My-treehouse-project-7/"
+        <div class="col box-background">
+          <h3>Employee Directory API</h3>
+          <a href="https://horeatiff.github.io/My-treehouse-project-8/"
             ><img
-              class="proj-photo"
-              src="img/project_4.jpg"
-              alt="interactive gallery"
+              class="cont-img"
+              src="/img/portfolio-6.png"
+              alt="Employee Directory"
           /></a>
           <p>
             This employee directory uses an public API for populating the user
@@ -153,12 +154,97 @@
           </p>
           <p>
             Here i used some CSS and a lot of JavaScript for displaying the
-            modal, getting the users and also for the search function.
+            modal, getting the users info and also for the search function.
           </p>
         </div>
       </div>
-    </main>
+    </section>
 
-    <script src="script/app.js"></script>
+    <section>
+      <div class="title">
+        <h3 id="skills">SKILLS</h3>
+      </div>
+      <div class="container">
+        <div class="col box-background">
+          <h3>Coding in HTML</h3>
+          <img
+            class="cont-img"
+            src="img/skills-1.jpg"
+            alt="HTML coding image"
+          />
+          <p>
+            I am very proficient in using HTML language for creating websites
+            based on customer demands.
+          </p>
+        </div>
+        <div class="col box-background">
+          <h3>Coding in CSS</h3>
+          <img class="cont-img" src="img/skills-2.jpg" alt="CSS coding image" />
+          <p>
+            Taking HTML pages to a whole new level, i am able to stylize them
+            using CSS language so web pages are more pleasant to navigate.
+          </p>
+        </div>
+        <div class="col box-background">
+          <h3>Coding in JavaScript</h3>
+          <img
+            class="cont-img"
+            src="img/skills-3.png"
+            alt="3D printing image"
+          />
+          <p>
+            I use JavaScript to update and change both HTML and CSS used on my
+            projects. JavaScript can calculate, manipulate and validate data, it
+            is the programming language of the web.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="contact">
+        <h3 id="contact">CONTACT</h3>
+        <p>
+          If you are interested in more information or what to find out more
+          about my projects, i'd love to talk with you!
+        </p>
+        <p>Phone <a href="+1234567890">+40755870225</a></p>
+        <p>Email <a href="horea.tiff@gmail.com">horea.tiff@gmail.com</a></p>
+        <ul>
+          <li>
+            <a href="https://github.com/horeatiff" class="social github"
+              >Github</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/horea-tiff-20593a244"
+              class="social linkedin"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="bottom-txt">
+        <div class="txt1">
+          <a href="#profile"><strong>Horea Tiff</strong></a>
+        </div>
+        <div class="txt2">
+          <a href="#top"><strong>HOME</strong></a>
+        </div>
+        <div class="txt3">
+          <a href="#portfolio"><strong>PORTFOLIO</strong></a>
+        </div>
+        <div class="txt4">
+          <a href="#skills"><strong>SKILLS</strong></a>
+        </div>
+        <div class="txt5">
+          <a href="#contact"><strong>CONTACT</strong></a>
+        </div>
+        <div class="txt6">
+          <a href="#top"><strong>BACK TO TOP</strong></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
