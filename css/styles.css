@@ -285,11 +285,11 @@ a.social {
 }
 
 a.github {
-  background-image: url(/img/github.svg);
+  background-image: url(img/github.svg);
 }
 
 a.linkedin {
-  background-image: url(/img/linkedin.svg);
+  background-image: url(img/linkedin.svg);
 }
 
 a.social:hover {
