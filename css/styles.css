@@ -165,7 +165,6 @@ h1 a:hover {
 }
 
 .desc-txt {
-  font-family: "Exo 2", sans-serif;
   margin: 5%;
   font-weight: 400;
   letter-spacing: 0.05em;
@@ -182,7 +181,6 @@ h1 a:hover {
 }
 
 .col {
-  font-family: "Exo 2", sans-serif;
   margin-bottom: 10px;
   min-height: 250px;
   color: rgb(0, 0, 0);
@@ -212,7 +210,6 @@ h1 a:hover {
 }
 
 .main-footer {
-  font-family: "Exo 2", sans-serif;
   margin: 10px;
   border-radius: 10px;
   text-align: center;
@@ -220,7 +217,6 @@ h1 a:hover {
 }
 
 .contact {
-  font-family: "Exo 2", sans-serif;
   padding: 15px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.5);
@@ -239,7 +235,6 @@ h1 a:hover {
 }
 
 .bottom-txt {
-  font-family: "Montserrat", sans-serif;
   padding: 25px;
   padding: 10px;
   display: flex;
