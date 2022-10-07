@@ -1,3 +1,3 @@
-# My-treehouse-project-2
-Mobile first responsive layout.
-https://horeatiff.github.io/My-treehouse-project-2/
+# My-treehouse-project-
+Capstone Portfolio Project
+https://horeatiff.github.io/My-treehouse-project-9/
